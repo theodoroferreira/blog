@@ -78,7 +78,7 @@ export default function AboutPage() {
           <a href="https://x.com/lukeberrypi">X</a> or an email{" "}
           <a href="mailto:lukeberrypi@gmail.com">lukeberrypi@gmail.com</a>.
         </p>
-        <p>Smile, you&apos;re alive :)</p>
+        <p>Made with ❤️</p>
         <p>
           Best,
           <br />
