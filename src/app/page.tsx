@@ -96,7 +96,7 @@ export default function HomePage() {
       <p className="text-sm">
         An enthusiastic Spring Boot developer with a solid foundation in Java, 
         RESTful web services, APIs, functional programming and OOP. Practice 
-        building backend applications with Spring Boot. I'm a quick learner and 
+        building backend applications with Spring Boot. I&apos;m a quick learner and 
         passionate about writing efficient, maintainable code and collaborating in agile teams.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
