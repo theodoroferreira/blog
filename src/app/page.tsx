@@ -111,12 +111,14 @@ export default function HomePage() {
                 <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
                 <Copy className="size-4" />
               </button> */}
-              <a
-                href="mailto:theogferreira@outlook.com"
-                className="text-zinc-800 dark:text-zinc-200"
+              <button
+                className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200"
+                onClick={() =>
+                  navigator.clipboard.writeText("theogferreira@outlook.com")
+                }
               >
                 <Copy strokeWidth={1.4} className="size-4" />
-              </a>
+              </button>
             </div>
           </div>
           <span className="-mt-2 inline-flex w-fit items-center gap-1 rounded-full bg-green-100 px-2 py-0.5 text-sm text-green-600 ring-1 ring-green-500 dark:bg-transparent dark:text-emerald-500 dark:ring-emerald-500">
