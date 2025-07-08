@@ -8,7 +8,7 @@ export default function NotFound() {
         href="/"
         className="underline decoration-sky-500 underline-offset-4 dark:decoration-sky-600"
       >
-        Take me home, country road...
+        Take me home
       </a>
     </div>
   );

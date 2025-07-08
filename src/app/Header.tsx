@@ -54,9 +54,9 @@ export default function Header() {
             <ChevronLeft strokeWidth={1.4} />
           </div>
           <div className="flex flex-col max-sm:items-center">
-            Luke Berry
+            Theodoro Ferreira
             <span className="text-zinc-500 dark:text-zinc-400">
-              Software Engineer
+              Backend Software Developer
             </span>
           </div>
         </Link>
@@ -85,30 +85,6 @@ export default function Header() {
             aria-current={path === "/projects" ? "page" : undefined}
           >
             /projects
-            <Triangle
-              aria-hidden="true"
-              className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
-            />
-          </Link>
-          <Link
-            className="group relative rounded px-2 py-px ring-1 ring-sky-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-sky-600 dark:ring-opacity-0"
-            href="/articles"
-            aria-label="View articles"
-            aria-current={path.startsWith("/articles") ? "page" : undefined}
-          >
-            /articles
-            <Triangle
-              aria-hidden="true"
-              className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"
-            />
-          </Link>
-          <Link
-            className="group relative rounded px-2 py-px ring-1 ring-sky-500 ring-opacity-0 transition-all sm:hover:ring-opacity-100 dark:ring-sky-600 dark:ring-opacity-0"
-            href="/about"
-            aria-label="View about page"
-            aria-current={path === "/about" ? "page" : undefined}
-          >
-            /about
             <Triangle
               aria-hidden="true"
               className="absolute left-1/2 mt-1 hidden size-2 fill-sky-500 text-zinc-800 group-aria-[current=page]:block dark:fill-sky-600 dark:text-transparent"

@@ -13,47 +13,26 @@ interface Project {
 
 const projects: Project[] = [
   {
-    name: "css2wind",
+    name: "avaliacao-individual",
     description:
-      "Learn TailwindCSS by playing a minigame: there are eight CSS properties that you must translate to the equivalent TailwindCSS utility. Bet you can't get 8/8.",
-    url: "https://css2wind.com",
-    imageUrl: "/projects/css2wind.png",
-    githubUrl: "https://github.com/LukeberryPi/css2wind",
+      "Project developed for the Compass UOL internship program, where I had to create an application capable of handling order requests, consuming the ViaCEP API and storing the order events in a monogodb database.",
+    url: "https://github.com/theodoroferreira/avaliacao-individual",
+    imageUrl: "/projects/compass.png",
+    githubUrl: "https://github.com/theodoroferreira/avaliacao-individual",
     technologies: (
       <div className="flex items-center gap-x-3">
         <span className="rounded-full bg-[#007ACC] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
-          TypeScript
+          Java
         </span>
         <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
-          TailwindCSS
+          Spring Boot
         </span>
         <span className="rounded-full bg-black px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-inherit dark:text-zinc-200 dark:ring-1 dark:ring-zinc-500">
-          Next.js
+          Kafka
         </span>
       </div>
     ),
-  },
-  {
-    name: "phived",
-    description:
-      "Stop procrastinating by dealing with five tasks at a time. If you want to add more tasks you need to resolve a previous one. Surprisingly effective.",
-    url: "https://phived.com",
-    imageUrl: "/projects/phived.png",
-    githubUrl: "https://github.com/LukeberryPi/phived",
-    technologies: (
-      <div className="flex items-center gap-x-3">
-        <span className="rounded-full bg-[#00D8FE] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
-          React
-        </span>
-        <span className="rounded-full bg-[#38BDF9] px-2.5 py-0.5 text-sm text-zinc-950 dark:bg-inherit dark:text-inherit dark:ring-1 dark:ring-zinc-500">
-          TailwindCSS
-        </span>
-        <span className="rounded-full bg-gradient-to-r from-[#926AFE] to-[#49C7FF] px-2.5 py-0.5 text-sm text-zinc-100 dark:bg-none dark:ring-1 dark:ring-zinc-500">
-          Vite
-        </span>
-      </div>
-    ),
-  },
+  }
 ];
 
 function ProjectCard({
