@@ -7,7 +7,7 @@ services:
       - "traefik.enable=true"
 
       # --- ROUTER DEFINITION ---
-      - "traefik.http.routers.blog.rule=Host(`theodoroferreira.dev`)"
+      - "traefik.http.routers.blog.rule=Host(`theodoroferreira.dev`) || Host(`www.theodoroferreira.dev`)"
       - "traefik.http.routers.blog.entrypoints=websecure"
       - "traefik.http.routers.blog.tls=true"
       - "traefik.http.routers.blog.tls.certresolver=letsencrypt"
