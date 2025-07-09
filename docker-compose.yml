@@ -7,13 +7,13 @@ services:
       - "traefik.enable=true"
 
       # --- ROUTER DEFINITION ---
-      - "traefik.http.routers.bot.rule=Host(`theodoroferreira.dev`) && PathPrefix(`/api`)"
-      - "traefik.http.routers.bot.entrypoints=websecure"
-      - "traefik.http.routers.bot.tls=true"
-      - "traefik.http.routers.bot.tls.certresolver=letsencrypt"
+      - "traefik.http.routers.blog.rule=Host(`theodoroferreira.dev`)"
+      - "traefik.http.routers.blog.entrypoints=websecure"
+      - "traefik.http.routers.blog.tls=true"
+      - "traefik.http.routers.blog.tls.certresolver=letsencrypt"
 
       # --- SERVICE DEFINITION ---
-      - "traefik.http.services.bot.loadbalancer.server.port=8090"
+      - "traefik.http.services.blog.loadbalancer.server.port=8090"
 
     networks:
       - traefik-public
