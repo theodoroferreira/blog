@@ -1,37 +1,23 @@
-version: "3.9"
 services:
-  traefik:
-    image: traefik:v3.0
-    command:
-      - "--providers.docker=true"
-      - "--entrypoints.web.address=:90"
-      - "--entrypoints.websecure.address=:443"
-      - "--certificatesresolvers.letsencrypt.acme.httpchallenge=true"
-      - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
-      - "--certificatesresolvers.letsencrypt.acme.email=theogferreira@outlook.com"
-      - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
-    ports:
-      - "90:90"
-      - "8443:443"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock:ro"
-      - "./traefik/traefik.yml:/etc/traefik/traefik.yml:ro"
-      - "./traefik/acme.json:/letsencrypt/acme.json"
-    restart: always
-
-  app:
+  blog:
     build: ./
-    expose:
-      - "8090"
+    container_name: blog-app
+    restart: always
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.app.rule=Host(`theodoroferreira.dev`) && PathPrefix(`/api`)"
-      - "traefik.http.routers.app.entrypoints=web,websecure"
-      - "traefik.http.routers.app.tls=true"
-      - "traefik.http.routers.app.tls.certresolver=letsencrypt"
-      - "traefik.http.services.app.loadbalancer.server.port=8090"
-    restart: always
+
+      # --- ROUTER DEFINITION ---
+      - "traefik.http.routers.bot.rule=Host(`theodoroferreira.dev`) && PathPrefix(`/api`)"
+      - "traefik.http.routers.bot.entrypoints=websecure"
+      - "traefik.http.routers.bot.tls=true"
+      - "traefik.http.routers.bot.tls.certresolver=letsencrypt"
+
+      # --- SERVICE DEFINITION ---
+      - "traefik.http.services.bot.loadbalancer.server.port=8090"
+
+    networks:
+      - traefik-public
 
 networks:
-  default:
-    driver: bridge
+  traefik-public:
+    external: true
