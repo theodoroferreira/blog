@@ -94,7 +94,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
-        An enthusiastic Spring Boot developer with a solid foundation in Java, 
+        I am an enthusiastic Spring Boot developer with a solid foundation in Java, 
         RESTful web services, APIs, functional programming and OOP. Practice 
         building backend applications with Spring Boot. I&apos;m a quick learner and 
         passionate about writing efficient, maintainable code and collaborating in agile teams.

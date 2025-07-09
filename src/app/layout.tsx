@@ -50,7 +50,7 @@ export default function RootLayout({
             </a>
           </div>
           <blockquote className="text-zinc-800 dark:text-zinc-300">
-            Made with ❤️
+            Made with ❤️ by theo
           </blockquote>
         </footer>
       </body>
