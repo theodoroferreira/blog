@@ -1,4 +1,4 @@
-name: Deploy Portfolio Website to VPS
+name: Deploy Blog Website to VPS
 
 on:
   push:
