@@ -2,6 +2,7 @@
 
 import {
   SiGithub,
+  SiHostinger,
   SiLinkedin,
   SiYoutube,
 } from "@icons-pack/react-simple-icons";
@@ -65,6 +66,12 @@ const externalLinks: Link[] = [
     description: "watch me talk",
     url: "https://www.youtube.com/@theodorogferreira",
     icon: <SiYoutube className="fill-[#FF0032] dark:fill-zinc-200" />,
+  },
+    {
+    name: "Hostinger",
+    description: "support me and get a discount",
+    url: "https://hostinger.com.br?REFERRALCODE=GVZTHEOGFTJV",
+    icon: <SiHostinger className="fill-[#673DE6] dark:fill-zinc-200" />,
   }
 ];
 
