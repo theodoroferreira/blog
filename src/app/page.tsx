@@ -5,10 +5,12 @@ import {
   SiHostinger,
   SiLinkedin,
   SiYoutube,
+  SiWise,
 } from "@icons-pack/react-simple-icons";
 import { ArrowUpRight, Copy, Download, Send } from "lucide-react";
 import Link from "next/link";
 import { ReactNode } from "react";
+import { NomadIcon } from "../components/nomad-icon";
 
 const XLogo = () => {
   return (
@@ -67,11 +69,23 @@ const externalLinks: Link[] = [
     url: "https://www.youtube.com/@theodorogferreira",
     icon: <SiYoutube className="fill-[#FF0032] dark:fill-zinc-200" />,
   },
-    {
+  {
     name: "Hostinger",
     description: "support me and get a discount",
     url: "https://hostinger.com.br?REFERRALCODE=GVZTHEOGFTJV",
     icon: <SiHostinger className="fill-[#673DE6] dark:fill-zinc-200" />,
+  },
+  {
+    name: "Nomad",
+    description: "support me and get 0% fee on your first conversion",
+    url: "https://nomad.onelink.me/wIQT/Account?code=HSG8KWM721%26n=Theodoro%20Gaspar%20Ferreira",
+    icon: <NomadIcon className="fill-[#FFCE00] stroke-[#FFCE00] dark:fill-zinc-200 dark:stroke-zinc-200" />,
+  },
+  {
+    name: "Wise",
+    description: "support me and get 0% fee on your first conversion",
+    url: "https://wise.com/invite/ilpn/theodorog10",
+    icon: <SiWise className="fill-[#9FE870] dark:fill-zinc-200" />,
   }
 ];
 
@@ -101,9 +115,9 @@ export default function HomePage() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-sm">
-        I am an enthusiastic Spring Boot developer with a solid foundation in Java, 
-        RESTful web services, APIs, functional programming and OOP. Practice 
-        building backend applications with Spring Boot. I&apos;m a quick learner and 
+        An enthusiastic Spring Boot developer with a solid foundation in Java,
+        RESTful web services, APIs, functional programming and OOP. Over 3 years of experience
+        building backend applications with Spring Boot. I&apos;m a quick learner and
         passionate about writing efficient, maintainable code and collaborating in agile teams.
       </p>
       <div className="divide-y divide-zinc-400 overflow-hidden rounded ring-1 ring-zinc-400 dark:divide-zinc-500 dark:ring-zinc-500">
@@ -114,7 +128,7 @@ export default function HomePage() {
       <div className="flex justify-center gap-6 max-sm:flex-col-reverse sm:justify-between">
         <div className="flex flex-col justify-center gap-4 max-sm:items-center">
           <div className="group -m-8 flex select-all items-center gap-3 p-8 transition-all">
-            theogferreira@outlook.com
+            theodorogasparferreira@gmail.com
             <div className="inline-flex items-center gap-3">
               {/* TODO add copy email
                 <button className="text-zinc-800 sm:group-hover:inline-flex dark:text-zinc-200">
