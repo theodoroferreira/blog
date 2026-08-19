@@ -15,6 +15,8 @@ export type Journey = {
 const JOURNEYS_DIR = path.join(process.cwd(), "src/journeys");
 
 export function getAllTags() {
+  if (!fs.existsSync(JOURNEYS_DIR)) return [];
+
   let tags = new Set();
   const files = fs.readdirSync(JOURNEYS_DIR);
 
@@ -35,6 +37,8 @@ export function getAllTags() {
 }
 
 export function getJourneys() {
+  if (!fs.existsSync(JOURNEYS_DIR)) return [];
+
   const files = fs.readdirSync(JOURNEYS_DIR);
 
   const allJourneysData = files.map((file) => {
